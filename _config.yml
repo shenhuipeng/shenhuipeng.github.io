@@ -11,8 +11,7 @@ github_repo: "https://github.com/shenhuipeng/shenhuipeng.github.io" # you code r
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Nothing" <audio src="http://www.xiami.com/widget/0_3515679/singlePlayer.swf" controls="controls">
-Your browser does not support the audio tag. </audio>
+sidebar-about-description: "Nothing" 
 sidebar-avatar: /img/QQ截图20140827194144.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
