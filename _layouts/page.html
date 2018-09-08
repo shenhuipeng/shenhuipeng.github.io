@@ -109,8 +109,12 @@ layout: default
                         {% endif %}
                         {% if site.sidebar-about-description %}
                             <p>{{site.sidebar-about-description}}</p>
-                            <p><audio src="http://www.xiami.com/widget/0_3515679/singlePlayer.swf" controls="controls">
-Your browser does not support the audio tag. </audio></p>
+                        {% endif %}
+
+
+                        {% if site.music-name %}
+                            <p>{{site.music-name}}</p>
+                            <p><audio src="{{site.music-url}}"> Your browser does not support the audio tag. </audio></p>
                         {% endif %}
                         <!-- SNS Link -->
                         <ul class="list-inline">
