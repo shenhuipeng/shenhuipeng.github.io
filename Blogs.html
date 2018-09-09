@@ -4,46 +4,70 @@ layout: page
 description: "Thinking will not overcome fear but action will."
 ---
 
-{% for page_blogs in site.pages %}{% if page.title == "Blogs" %}
-
-    {% for post in paginator.posts %}
-    <div class="post-preview">
-
-
-        <a href="{{ post.url | prepend: page_blogs.url }}">
-            <h2 class="post-title">
-                {{ post.title }}
-            </h2>
-            {% if post.subtitle %}
-            <h3 class="post-subtitle">
-                {{ post.subtitle }}
-            </h3>
-            {% endif %}
-            <div class="post-content-preview">
-                {{ post.content | strip_html | truncate:200 }}
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <!-- 标签云 -->
+            <div id='tag_cloud' class="tags">
+                {% for tag in site.tags %}
+                <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+                {% endfor %}
             </div>
-        </a>
-        <p class="post-meta">
-            Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-        </p>
+
+            <!--<blockquote class="tag-comments">
+                标签命名规范：
+                    <li>行业观察、职位、公司优先使用中文</li>
+                    <li>外国产品、术语优先使用英文</li>
+            </blockquote>-->
+
+            <!-- 标签列表 -->
+            {% for tag in site.tags %}
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="{{ tag[0] }}">
+                    <span class="tag-text">{{ tag[0] }}</span>
+                </span>
+                {% for post in tag[1] %}
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <div class="post-preview">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        <h2 class="post-title">
+                            {{ post.title }}
+                        </h2>
+                        {% if post.subtitle %}
+                        <h3 class="post-subtitle">
+                            {{ post.subtitle }}
+                        </h3>
+                        {% endif %}
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </div>
+                <hr>
+                {% endfor %}
+            </div>
+            {% endfor %}
+
+        </div>
     </div>
-    <hr>
-    {% endfor %}
+</div>
 
-    <!-- Pager -->
-    {% if paginator.total_pages > 1 %}
-    <ul class="pager">
-        {% if paginator.previous_page %}
-        <li class="previous">
-            <a href="{{ paginator.previous_page_path | prepend: page_blogs.url | replace: '//', '/' }}">&larr; Newer Posts</a>
-        </li>
-        {% endif %}
-        {% if paginator.next_page %}
-        <li class="next">
-            <a href="{{ paginator.next_page_path | prepend: page_blogs.url | replace: '//', '/' }}">Older Posts &rarr;</a>
-        </li>
-        {% endif %}
-    </ul>
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: page_blogs.url | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
     {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: page_blogs.url | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
 
-{% endif %}{% endfor %}
+
