@@ -4,6 +4,16 @@ layout: page
 description: "Thinking will not overcome fear but action will."
 ---
 
+
+
+
+
+
+
+
+
+
+
 <!-- Main Content -->
 <div class="container">
     <div class="row">
@@ -15,7 +25,14 @@ description: "Thinking will not overcome fear but action will."
                 {% endfor %}
             </div>
 
-            {% for post in paginator.posts %}
+            <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                postlist-container
+            ">
+                {% for post in paginator.posts %}
             <div class="post-preview">
                 <a href="{{ post.url | prepend: site.baseurl }}">
                     <h2 class="post-title">
@@ -36,6 +53,9 @@ description: "Thinking will not overcome fear but action will."
             </div>
             <hr>
             {% endfor %}
+            </div>
+
+
 
             <!--<blockquote class="tag-comments">
                 标签命名规范：
