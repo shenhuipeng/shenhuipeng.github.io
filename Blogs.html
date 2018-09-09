@@ -6,7 +6,9 @@ description: "Thinking will not overcome fear but action will."
 
 {% for post in paginator.posts %}
 <div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
+    {% for page in site.pages %}{% if page.title == "Blogs" %}
+
+    <a href="{{ post.url | prepend: page.url }}">
         <h2 class="post-title">
             {{ post.title }}
         </h2>
@@ -19,6 +21,7 @@ description: "Thinking will not overcome fear but action will."
             {{ post.content | strip_html | truncate:200 }}
         </div>
     </a>
+    {% endif %}{% endfor %}
     <p class="post-meta">
         Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     </p>
