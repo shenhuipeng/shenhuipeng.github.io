@@ -9,9 +9,10 @@ catalog: true
 tags:
     - test
 ---
-<center><audio src="https://sjtueducn-my.sharepoint.com/personal/shenhuipeng_sjtu_edu_cn/_layouts/15/guestaccess.aspx?docid=14e35483d0d6e43cab01524feaebe3d0a&authkey=AWXUHKjhCiZfPQx1iCh5EB4" type="audio/mpeg" controls="controls">
-Your browser does not support the audio tag.
-</audio></center>
+
+<center><audio controls="" autoplay=0><source src="https://sjtueducn-my.sharepoint.com/personal/shenhuipeng_sjtu_edu_cn/_layouts/15/guestaccess.aspx?docid=14e35483d0d6e43cab01524feaebe3d0a&authkey=AWXUHKjhCiZfPQx1iCh5EB4" type="audio/mpeg">Your browser does not support the audio element.</audio></center>
+
+
 
 <video width="100%"   controls>
 
