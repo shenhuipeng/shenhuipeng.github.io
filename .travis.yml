@@ -5,6 +5,9 @@ env:
 install: 
   - gem install jekyll
   - gem install jekyll-paginate
+  - gem install jekyll-sitemap
+  - gem install jekyll-seo-tag
+  
 script: 
   - jekyll build
 after_success:
