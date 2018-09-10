@@ -6,6 +6,8 @@ email: 402911395@qq.com
 description: "Nothing"
 keyword: "Nothing"
 url: "https://shenhuipeng.github.io"          # your host, for absolute URL
+plugins:
+  - jekyll-sitemap
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/shenhuipeng/shenhuipeng.github.io" # you code repository
 
@@ -80,9 +82,6 @@ gitalk:
 ga_track_id: 'UA-125419553-1'            # Format: UA-xxxxxx-xx
 ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
-
-plugins:
-  - jekyll-sitemap
 
 
 # Featured Tags
