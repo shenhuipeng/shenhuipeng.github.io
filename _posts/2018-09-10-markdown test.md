@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      markdown test
-subtitle:   first post test
+subtitle:   first post test   
 date:       2018-09-10
 author:     pshow
 header-img: img/post-bg-ios9-web.jpg
