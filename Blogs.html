@@ -20,9 +20,9 @@ description: "Thinking will not overcome fear but action will."
         </div>
     </a>
     <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+        |<span data-hk-page="{{ post.url | prepend: site.url }}"> - </span> views| Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     </p>
-    |浏览量: <span data-hk-page="{{ post.url | prepend: site.url }}"> - </span>次
+
 </div>
 <hr>
 {% endfor %}
