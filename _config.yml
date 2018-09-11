@@ -45,9 +45,7 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
+
 
 
 
