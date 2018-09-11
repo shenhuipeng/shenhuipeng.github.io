@@ -1,14 +1,11 @@
 # Site settings
-title: Mr.Donut
+title: "Mr.Donut"
 SEOTitle: Mr.Donut
 header-img: img/kyoto2-(2).jpg
 email: 402911395@qq.com
 description: "Nothing"
 keyword: "Nothing"
 url: "https://shenhuipeng.github.io"          # your host, for absolute URL
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/shenhuipeng/shenhuipeng.github.io" # you code repository
 
@@ -42,7 +39,17 @@ anchorjs: true                          # if you want to customize anchor. check
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
+gems: 
+  - jekyll
+  - jekyll-paginate
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+whitelist:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-sitemap
 
 
 
