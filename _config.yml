@@ -49,7 +49,6 @@ gems:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-feed
-  - jemoji
   - jekyll-sitemap
 
 
