@@ -6,6 +6,7 @@ date:       2018-09-10
 author:     pshow
 header-img: img/post-bg-ios9-web.jpg
 catalog: true
+categories: [codes, test]
 tags:
     - test
 ---
