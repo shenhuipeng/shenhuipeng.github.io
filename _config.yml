@@ -45,7 +45,12 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
-
+ whitelist:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-sitemap
 
 
 
