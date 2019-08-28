@@ -3,7 +3,7 @@ title: "Mr.Donut"
 SEOTitle: Mr.Donut
 header-img: img/kyoto2-(2).jpg
 email: 402911395@qq.com
-description: "Nothing"
+description: "しのぶちゃんのドーナツショップ"
 keyword: "Nothing"
 url: "https://shenhuipeng.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -11,7 +11,7 @@ github_repo: "https://github.com/shenhuipeng/shenhuipeng.github.io" # you code r
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Nothing" 
+sidebar-about-description: "しのぶちゃんのドーナツショップ" 
 sidebar-avatar: /img/QQ截图20140827194144.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
