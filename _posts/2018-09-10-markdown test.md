@@ -32,3 +32,13 @@ tags:
 
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="110" src="//music.163.com/outchain/player?type=2&id=26608077&auto=0&height=66"></iframe>
+
+
+<video width="100%"   controls>
+
+<source src="https://onedrive.live.com/download?cid=707071D089B55657&resid=707071D089B55657%2114252&authkey=AKOwX0TmT-p9mqM"type="video/mp4">
+
+Your browser does not support the video tag.
+</video>
+
+<iframe src="https://onedrive.live.com/embed?cid=707071D089B55657&resid=707071D089B55657%2114252&authkey=AKOwX0TmT-p9mqM" width="320" height="180" frameborder="0" scrolling="no" allowfullscreen></iframe>
