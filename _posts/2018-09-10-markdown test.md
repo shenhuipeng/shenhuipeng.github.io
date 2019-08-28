@@ -37,12 +37,11 @@ tags:
 <video width="100%"   controls>
 
 <source src="https://onedrive.live.com/download?cid=707071D089B55657&resid=707071D089B55657%2114252&authkey=AKOwX0TmT-p9mqM" type="video/mp4">
-
 Your browser does not support the video tag.
 </video>
 
 
-
+<video width="100%"   controls>
 <source src="https://onedrive.live.com/download?cid=707071D089B55657&resid=707071D089B55657%2111700&authkey=AFL5OTWFeN2OyHs" type="video/mp4">
 
 Your browser does not support the video tag.
