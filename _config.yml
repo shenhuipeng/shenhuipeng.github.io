@@ -72,12 +72,12 @@ kramdown:
 # Gitalk
 gitalk:
   enable: false  #是否开启Gitalk评论
-  clientID: b344fbf91213c6befd6c                            #生成的clientID
-  clientSecret:  1bcd8db53540d4e4a6b9ee3fa2d5a5902f0f71a8   #生成的clientSecret
-  repo:  shenhuipeng.github.io  #仓库名称
-  owner:   shenhuipeng  #github用户名
-  admin: shenhuipeng
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+  # clientID: b344fbf91213c6befd6c                            #生成的clientID
+  # clientSecret:  1bcd8db53540d4e4a6b9ee3fa2d5a5902f0f71a8   #生成的clientSecret
+  # repo:  shenhuipeng.github.io  #仓库名称
+  # owner:   shenhuipeng  #github用户名
+  # admin: shenhuipeng
+  # distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
