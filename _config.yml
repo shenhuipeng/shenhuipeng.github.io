@@ -7,6 +7,7 @@ description: "しのぶちゃんのドーナツショップ"
 keyword: "Nothing"
 url: "https://shenhuipeng.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+imgurl: "https://shinobu.site/img"
 github_repo: "https://github.com/shenhuipeng/shenhuipeng.github.io" # you code repository
 
 # Sidebar settings
