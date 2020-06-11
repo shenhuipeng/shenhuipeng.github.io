@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:     (CVPR2019) MOTS: Multi-object tracking and segmentation
+title:      MOTS: Multi-object tracking and segmentation
 subtitle:   CVPR2019, MOTS
 date:       2020-06-08
 author:     pshow
