@@ -5,6 +5,7 @@ subtitle:   CVPR2019, MOTS
 date:       2020-06-08
 author:     pshow
 header-img: img/post-bg-debug.png
+typora-root-url: .
 catalog: true
 categories: codes
 tags:
