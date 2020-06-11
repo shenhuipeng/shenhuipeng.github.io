@@ -36,7 +36,7 @@ bounding box level tracking performance is saturating 基于bbox的追踪已经�
 
 常规的VOS数据集provide only bounding box annotations of objects.
 
-![image-20200611145912394](MOTSMulti-objecttrackingandsegmentation/image-20200611145912394.png)
+![image-20200611145912394](/img/MOTSMulti-objecttrackingandsegmentation/image-20200611145912394.png)
 
 当目标被遮挡时使用bbox作为gt就会引入多余的信息，使用语义掩膜是恰当的。
 
