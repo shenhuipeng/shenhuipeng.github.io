@@ -12,7 +12,7 @@ tags:
     - paper
     - codes
 ---
-# (CVPR2019)[MOTS Multi-object tracking and segmentation](http://openaccess.thecvf.com/content_CVPR_2019/html/Voigtlaender_MOTS_Multi-Object_Tracking_and_Segmentation_CVPR_2019_paper.html)
+# (CVPR2019)[MOTS: Multi-object tracking and segmentation](http://openaccess.thecvf.com/content_CVPR_2019/html/Voigtlaender_MOTS_Multi-Object_Tracking_and_Segmentation_CVPR_2019_paper.html)
 
 ### 主要贡献：
 
@@ -36,7 +36,7 @@ bounding box level tracking performance is saturating 基于bbox的追踪已经�
 
 常规的VOS数据集provide only bounding box annotations of objects.
 
-![image-20200611145912394](/img/MOTSMulti-objecttrackingandsegmentation/image-20200611145912394.png)
+![image-20200611145912394](/img/(CVPR2019)MOTS%20Multi-object%20tracking%20and%20segmentation.assets/image-20200611145912394.png)
 
 当目标被遮挡时使用bbox作为gt就会引入多余的信息，使用语义掩膜是恰当的。
 
@@ -70,4 +70,20 @@ there are some datasets with MOT annotations, i.e., tracks annotated at the boun
 
 #### 半自动标注过程
 
-We use a convolutional network to automatically produce segmentation masks from bounding boxes, followed by a correction step using manual polygon annotations.
+We use a convolutional network to automatically produce segmentation masks from bounding boxes, followed by a correction step using manual polygon annotations. Per track, we fine-tune the initial network using the manual annotations as additional training data, similarly to [6]. We iterate the process of generating and correcting masks until pixel-level accuracy for all annotation masks has been reached.
+
+使用DeepLabv3+, which takes as input a crop of the input image specified by the bounding box with a small context region added, together with an additional input channel that encodes the bounding box as a mask.
+
+Using **two manually annotated segmentation masks per object** for fine-tuning the refinement network already produces relatively good masks for the object’s appearances in the other frames, but often small errors remain.
+
+![image-20200611163743530](/img/(CVPR2019)MOTS%20Multi-object%20tracking%20and%20segmentation.assets/image-20200611163743530.png)
+
+![image-20200611163814270](/img/(CVPR2019)MOTS%20Multi-object%20tracking%20and%20segmentation.assets/image-20200611163814270.png)
+
+#### MOTSChallenge
+
+We further annotated 4 of 7 sequences of the MOTChallenge 2017 [38] training dataset4 and obtained
+the MOTSChallenge dataset. MOTSChallenge focuses on pedestrians in crowded scenes and is very challenging due to many occlusion cases, for which a pixel-wise description is especially beneficial. A sample of the annotations is shown in Fig. 2, statistics are given in Table 1.
+
+### 评估方法
+
