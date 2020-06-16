@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "(ICIP2017)SIMPLE ONLINE AND REALTIME TRACKING WITH A DEEP ASSOCIATION METRIC"
-subtitle:   ICIP2017,, MOTS
+subtitle:   ICIP2017, MOTS
 date:       2020-06-16
 author:     pshow
 header-img: img/post-bg-debug.png
@@ -148,3 +148,10 @@ Instead of solving for measurement-to-track associations in a global assignment 
 
 ![image-20200616094958933](/img/deep_sort.assets/image-20200616094958933.png)
 
+### 实验
+
+使用Faster-RCNN作为输入
+
+![image-20200616095322452](/img/deep_sort.assets/image-20200616095322452.png)
+
+![image-20200616095510403](/img/deep_sort.assets/image-20200616095510403.png)
