@@ -132,7 +132,7 @@ MOT任务基于时间戳，有着十分独特的图构造，需要对MPN进行�
 
 The initial embeddings that our MPN receives as input are produced by other backpropagatable networks.
 
- ##### 特征嵌入
+##### 特征嵌入
 
 ![image-20200617100643047](/img/Learning%20a%20Neural%20Solver%20for%20Multiple%20Object%20Tracking.assets/image-20200617100643047.png)
 
