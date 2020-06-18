@@ -1,14 +1,3 @@
-<head>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [['$','$']]
-            }
-        });
-    </script>
-</head>
 ---
 layout:     post
 title:      "(ICIP2017)SIMPLE ONLINE AND REALTIME TRACKING WITH A DEEP ASSOCIATION METRIC"
@@ -85,7 +74,7 @@ The track handling and Kalman filtering framework is mostly identical to the ori
 
 We use a standard Kalman filter with constant velocity motion and linear observation model,
 
-(u,v,\gamma,h, \dot{u}, \dot{v}, \dot{\gamma},\dot{h}) 8维向量来表示跟踪目标的状态，bbox中心坐标，宽高比，高度，及其对应的速度。
+$(u,v,\gamma,h, \dot{u}, \dot{v}, \dot{\gamma},\dot{h})$ 8维向量来表示跟踪目标的状态，bbox中心坐标，宽高比，高度，及其对应的速度。
 
 $(u,v,\gamma,h)$ 为目标状态的直接观测值。
 
