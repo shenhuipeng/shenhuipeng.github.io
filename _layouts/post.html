@@ -49,6 +49,16 @@ layout: default
 
 <!-- Post Content -->
 <article>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+
+
     <div class="container">
         <div class="row">
 
@@ -87,6 +97,7 @@ layout: default
                 
 
 
+                
                 <!--Gitalk评论start  -->
                 <!-- {% if site.gitalk.enable %} -->
                 <!-- 引入Gitalk评论插件  -->
